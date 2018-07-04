@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "short_name": "Cha-Cha",
+    "name": "Cha-Cha Savings Extension",
+    "description": "Save more. Buy less",
+    "version": "1",
+    "author": "Nick Clear",
+    "permissions": ["activeTab"],
+    "display": "browser",
+    "start_url": "https://app.acorns.com/present",
+}
