@@ -1,25 +1,23 @@
 
-const cartURL = [
-    "https://www.amazon.com/gp/cart/view.html/ref=nav_cart",
-    "https://shop.lululemon.com/shop/mybag.jsp",
-    "https://cart.payments.ebay.com/sc/view",
-    "https://www.etsy.com/cart?ref=hdr",
-    "https://secure-store.nike.com/us/checkout/html/cart.jsp?country=US&country=US&l=cart&site=nikestore&returnURL=https://www.nike.com/us/en_us/&route=html",
-    "https://www.adidas.com/on/demandware.store/Sites-adidas-US-Site/en_US/Cart-Show"
-];
+const alertArr = ['cart', 'checkout', 'bag']
 
-for(let i = 0; i < cartURL.length; i++){
-    if(cartURL[i] === window.location.href){
+for(let i = 0; i < alertArr.length; i++){
+    if(window.location.pathname.indexOf(alertArr[i]) !== -1){
         createModal();
+        break;
     }
 }
 
-document.getElementById('acornsBtn').addEventListener("click", clickImg);
-document.getElementById('closeBtn').addEventListener("click", hideModal);
-
 function clickImg(){
-    window.location.href = "https://app.acorns.com/present";
+    location.assign('https://app.acorns.com/present');
 }
+
+// if(window.location.href === 'https://app.acorns.com/present'){
+//     window.onload = function() {
+//         alert('hello')
+//         document.querySelector('.shYYq').click();
+//     };
+// }
 
 function hideModal() {
     wrapperDiv.setAttribute("style","display: none");
@@ -71,4 +69,7 @@ function createModal(){
 
     document.body.appendChild(wrapperDiv);
     document.body.appendChild(modalDialogParentDiv);
+
+    document.getElementById('acornsBtn').addEventListener('click', clickImg);
+    document.getElementById('closeBtn').addEventListener('click', hideModal);
 }
