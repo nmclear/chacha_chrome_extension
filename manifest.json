@@ -10,7 +10,7 @@
         "default_title": "Cha-Cha"
     },
     "icons": {
-        "80": "icon50.png"
+        "50": "icon50.png"
     },
     "content_scripts": [
         {
