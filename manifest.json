@@ -1,11 +1,14 @@
 {
     "manifest_version": 2,
     "short_name": "Cha-Cha",
-    "name": "Cha-Cha Savings Extension",
-    "description": "Save more. Buy less. Prompts you to either to Login to Acorns before finalizing an online order. Helps encouring long-term savings. Not affiliated with Acorns. Image (https://app.acorns.com/icons/acorns-logotype.svg) belongs to Acorns Grow, Inc",
+    "name": "Cha-Cha Savings",
+    "description": "Save more. Buy less. Prompts you to invest before online spending. Helps encourage long-term savings.",
     "version": "1.0",
     "author": "Nick Clear",
-    "permissions": ["activeTab","tabs", "<all_urls>"],
+    "permissions": [
+        "activeTab",
+        "<all_urls>"
+    ],
     "browser_action": {
         "default_title": "Cha-Cha"
     },
@@ -15,7 +18,11 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "js": ["content.js"]
+            "css": ["tingle/tingle.min.css", "modal.css"],
+            "js": ["tingle/tingle.min.js", "content.js"]
         }
+    ],
+    "web_accessible_resources": [
+        "tingle/tingle.min.css", "tingle/tingle.js"
     ]
 }

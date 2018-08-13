@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+
+.cha-cha {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+.cha-cha .modalHeader {
+    text-align: center;
+    color: #6ec165;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.cha-cha .modalBody {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: none;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.cha-cha .linkBtn {
+    background:#6ec165;
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:45px;
+    font-size:22px;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+.cha-cha .linkBtn:hover {
+    background:#fff;
+    color:#6ec165;
+    transform: scale(1.1);
+}
+
+.cha-cha .linkBtn:before,
+.cha-cha .linkBtn:after {
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #6ec165;
+    transition:400ms ease all;
+}
+
+.cha-cha .linkBtn:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+
+.cha-cha .linkBtn:hover:before,
+.cha-cha .linkBtn:hover:after {
+    width:100%;
+    transition:800ms ease all;
+}
