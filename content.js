@@ -19,18 +19,6 @@ const messageArr = [
     `"Never buy what you do not need because it is cheap; it will be dear to you." –Thomas Jefferson`
 ]
 
-// for(let i = 0; i < alertArr.length; i++){
-//     if(window.location.pathname.indexOf(alertArr[i]) !== -1){
-
-//         const randomIndex = Math.floor((Math.random() * messageArr.length));
-//         const message = messageArr[randomIndex]
-
-//         let modal = createModal(message);
-//         modal.open();
-//         break;
-//     }
-// }
-
 for(let alert of alertArr){
     if(window.location.pathname.indexOf(alert) !== -1){
 
@@ -43,24 +31,13 @@ for(let alert of alertArr){
     }
 }
 
-
 function createModal(message){
-    // instanciate new modal
     const modal = new tingle.modal({
         footer: true,
         stickyFooter: false,
         closeMethods: ['overlay', 'button', 'escape'],
         closeLabel: "Close",
-        cssClass: ['cha-cha'],
-        // onOpen: function() {
-        //     console.log('modal open');
-        // },
-        // onClose: function() {
-        //     console.log('modal closed');
-        // },
-        // beforeClose: function() {
-        //     return true;
-        // }
+        cssClass: ['cha-cha']
     });
 
     modal.setContent(`
