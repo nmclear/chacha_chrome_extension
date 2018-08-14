@@ -1,0 +1,89 @@
+.popup {
+    width: 250px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.popup .header {
+    text-align: center;
+    color: #6ec165;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 5px;
+
+}
+
+.popup .btn {
+    display: block;
+    width: 100px;
+    margin: 7px auto;
+    line-height: 30px;
+    background:#6ec165;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:30px;
+    font-size:18px;
+    padding:5px 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+.popup .btn:hover {
+    background:#fff;
+    color:#6ec165;
+    transform: scale(1.1);
+}
+
+.popup .btn:before,
+.popup .btn:after {
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #6ec165;
+    transition:400ms ease all;
+}
+
+.popup .btn:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+
+.popup .btn:hover:before,
+.popup .btn:hover:after {
+    width:100%;
+    transition:800ms ease all;
+}
+
+.popup a:link {
+    text-decoration: none;
+}
+
+.popup a:visited {
+    text-decoration: none;
+}
+
+.popup a:hover {
+    text-decoration: none;
+}
+
+.popup a:active {
+    text-decoration: none;
+}
+
+.popup hr.style-one {
+    border: 0;
+    height: 1px;
+    width: 235px;
+    background: #6ec165;
+    background-image: linear-gradient(to right, #ccc, #6ec165, #ccc);
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+}
