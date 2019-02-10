@@ -1,6 +1,6 @@
 # Cha-Cha Savings Application
 
-* [View App in Chrome Store] (https://chachasavings.com)
+* [View App in Chrome Store](https://chachasavings.com)
 
 ## Developer
 * [Nick Clear](https://github.com/nmclear) 
